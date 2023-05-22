@@ -71,10 +71,12 @@ class HomeVC: UIViewController {
     //carregar ultimas menssagens
     func addListenerRecuperarConversa() {
         if let idUsuarioLogado = auth?.currentUser?.uid{
-            self.conversasListener =
-            dp?.collection("conversas").document(idUsuarioLogado).collection("ultimas_conversas").addSnapshotListener({ querSnapshot, error in
+            self.conversasListener = dp?.collection("conversas").document(idUsuarioLogado).collection("ultimas_conversas").addSnapshotListener({ querSnapshot, error in
+                
                 if error == nil{
+                    
                     self.listaConversas.removeAll()
+                    
                     if let snapshot = querSnapshot{
                         for document in snapshot.documents{
                             let dados = document.data()
@@ -88,16 +90,16 @@ class HomeVC: UIViewController {
     }
     
     func getcontato(){
-        self.listContact.removeAll()
-        self.dp?.collection("usuarios").document(self.idUsuarioLogado ?? "").collection("contatos").getDocuments(completion: {
-            snapShotResultado, error in
+        self.dp?.collection("usuarios").document(self.idUsuarioLogado ?? "").collection("contatos").getDocuments(completion: { snapShotResultado, error in
             
             if error != nil{
                 print("error getContato")
                 return
             }
-            if let snapShot = snapShotResultado{
-                for document in snapShot.documents{
+            
+            if let snapshot = snapShotResultado{
+                
+                for document in snapshot.documents{
                     let dadosContato = document.data()
                     self.listContact.append(Contact(dicionario: dadosContato))
                 }
@@ -118,7 +120,7 @@ extension HomeVC:UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if self.screenContact ?? false{
-            if indexPath.row == self.listContact.count {
+            if indexPath.row == self.listContact.count{
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MessageLastCollectionViewCell.identifier, for: indexPath)
                 return cell
             }else{
