@@ -118,7 +118,7 @@ extension HomeVC:UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if self.screenContact ?? false{
-            if indexPath.row == self.listContact.count{
+            if indexPath.row == self.listContact.count {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MessageLastCollectionViewCell.identifier, for: indexPath)
                 return cell
             }else{
@@ -137,7 +137,9 @@ extension HomeVC:UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if self.screenContact ?? false{
             if indexPath.row == self.listContact.count{
-            
+                self.alert?.addContact(completion: { value in
+                    self.contato?.addContact(email: value, emailUsuarioLogado: self.emailUsuarioLogado ?? "", idUsuario: self.idUsuarioLogado ?? "")
+                })
             }
         }else{
             

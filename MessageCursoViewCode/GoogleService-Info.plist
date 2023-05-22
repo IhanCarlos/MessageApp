@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>807358155082-a4v924k42roujrsiopsr3gb8lhrqqj3l.apps.googleusercontent.com</string>
+	<string>842305905538-uu3itiu30g72vut2blhqonei5s2bjlbb.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.807358155082-a4v924k42roujrsiopsr3gb8lhrqqj3l</string>
+	<string>com.googleusercontent.apps.842305905538-uu3itiu30g72vut2blhqonei5s2bjlbb</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBFK91pWmHkrZnWgkcU5zarOuV-aj97o90</string>
+	<string>AIzaSyCjZ57pBV68nHjrFp60sONlo-oy0jhCSWQ</string>
 	<key>GCM_SENDER_ID</key>
-	<string>807358155082</string>
+	<string>842305905538</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>IhanCarlos.StudyViewCode</string>
+	<string>ihanCarlos.MessageCursoViewCode</string>
 	<key>PROJECT_ID</key>
-	<string>study-view-code</string>
+	<string>messagecursoviewcode-bb2d9</string>
 	<key>STORAGE_BUCKET</key>
-	<string>study-view-code.appspot.com</string>
+	<string>messagecursoviewcode-bb2d9.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:807358155082:ios:2b6a58c0dffa31c988d9b3</string>
+	<string>1:842305905538:ios:f19e8f0abae1f6d2d0e59b</string>
 </dict>
 </plist>

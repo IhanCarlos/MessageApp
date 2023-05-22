@@ -23,7 +23,6 @@
 		1E54D9F72992D51400517431 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E54D9F22992D51400517431 /* LoginVC.swift */; };
 		1E54D9F82992D51400517431 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E54D9F42992D51400517431 /* LoginScreen.swift */; };
 		1E54D9FB2992D6A800517431 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E54D9FA2992D6A800517431 /* Alert.swift */; };
-		1E54D9FD2992ED2A00517431 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E54D9FC2992ED2A00517431 /* GoogleService-Info.plist */; };
 		1E54DA092992F83700517431 /* Extension+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E54D9FF2992F83700517431 /* Extension+Button.swift */; };
 		1E54DA0A2992F83700517431 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E54DA002992F83700517431 /* Custom.swift */; };
 		1E54DA0B2992F83700517431 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E54DA012992F83700517431 /* Extension+String.swift */; };
@@ -32,6 +31,7 @@
 		1E54DA0E2992F83700517431 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E54DA052992F83700517431 /* Poppins-Bold.ttf */; };
 		1E54DA0F2992F83700517431 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E54DA062992F83700517431 /* Poppins-SemiBold.ttf */; };
 		1E54DA102992F83700517431 /* send.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1E54DA082992F83700517431 /* send.wav */; };
+		1E77C1CE2A1C24D4000BB762 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E77C1CD2A1C24D4000BB762 /* GoogleService-Info.plist */; };
 		AB21339B3579CFACA7B1D2C1 /* Pods_MessageCursoViewCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185C7F91AA09405CF731D96A /* Pods_MessageCursoViewCode.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +55,6 @@
 		1E54D9F22992D51400517431 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		1E54D9F42992D51400517431 /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		1E54D9FA2992D6A800517431 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
-		1E54D9FC2992ED2A00517431 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1E54D9FF2992F83700517431 /* Extension+Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Button.swift"; sourceTree = "<group>"; };
 		1E54DA002992F83700517431 /* Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
 		1E54DA012992F83700517431 /* Extension+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		1E54DA052992F83700517431 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		1E54DA062992F83700517431 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		1E54DA082992F83700517431 /* send.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = send.wav; sourceTree = "<group>"; };
+		1E77C1CD2A1C24D4000BB762 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3853D806156093FC22CA7F34 /* Pods-MessageCursoViewCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageCursoViewCode.release.xcconfig"; path = "Target Support Files/Pods-MessageCursoViewCode/Pods-MessageCursoViewCode.release.xcconfig"; sourceTree = "<group>"; };
 		D657E0088BEC238EE4B19269 /* Pods-MessageCursoViewCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageCursoViewCode.debug.xcconfig"; path = "Target Support Files/Pods-MessageCursoViewCode/Pods-MessageCursoViewCode.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,7 +172,7 @@
 				1E54D9D92992D4A400517431 /* SceneDelegate.swift */,
 				1E54D9E02992D4A600517431 /* Assets.xcassets */,
 				1E54D9E22992D4A600517431 /* LaunchScreen.storyboard */,
-				1E54D9FC2992ED2A00517431 /* GoogleService-Info.plist */,
+				1E77C1CD2A1C24D4000BB762 /* GoogleService-Info.plist */,
 				1E54D9E52992D4A600517431 /* Info.plist */,
 			);
 			path = MessageCursoViewCode;
@@ -314,11 +314,11 @@
 			files = (
 				1E54D9E42992D4A600517431 /* LaunchScreen.storyboard in Resources */,
 				1E54DA0D2992F83700517431 /* Poppins-Medium.ttf in Resources */,
+				1E77C1CE2A1C24D4000BB762 /* GoogleService-Info.plist in Resources */,
 				1E54DA0E2992F83700517431 /* Poppins-Bold.ttf in Resources */,
 				1E54DA0F2992F83700517431 /* Poppins-SemiBold.ttf in Resources */,
 				1E54D9E12992D4A600517431 /* Assets.xcassets in Resources */,
 				1E54DA102992F83700517431 /* send.wav in Resources */,
-				1E54D9FD2992ED2A00517431 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
