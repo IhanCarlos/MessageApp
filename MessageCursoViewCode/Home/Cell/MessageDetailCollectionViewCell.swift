@@ -34,22 +34,22 @@ class MessageDetailCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.addSubview(self.imageView)
-        self.addSubview(self.userName)
-        self.setupConstraints()
+        addSubview(imageView)
+        addSubview(userName)
+        setupConstraints()
     }
     
     
     func setupConstraints() {
         NSLayoutConstraint.activate([
-            self.imageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30),
-            self.imageView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            self.imageView.widthAnchor.constraint(equalToConstant: 55),
-            self.imageView.heightAnchor.constraint(equalToConstant: 55),
+            imageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 30),
+            imageView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            imageView.widthAnchor.constraint(equalToConstant: 55),
+            imageView.heightAnchor.constraint(equalToConstant: 55),
             
-            self.userName.leadingAnchor.constraint(equalTo: self.imageView.trailingAnchor, constant: 15),
-            self.userName.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            self.userName.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10)
+            userName.leadingAnchor.constraint(equalTo: imageView.trailingAnchor, constant: 15),
+            userName.centerYAnchor.constraint(equalTo: centerYAnchor),
+            userName.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10)
         
         ])
     }
